@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- ==============================================
+		Title and basic Metas
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>The Big Day</title>
+		<meta name="description" content="Description">
+		<meta name="author" content="Your Name Here">
+
+		<!-- ==============================================
+		Mobile Metas
+		=============================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" /> <!-- Twitter Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" /> <!-- Twitter Bootstrap Responsive -->
+		<link rel="stylesheet" href="css/flexslider.css"> <!-- Flexslider -->
+		<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css"/> <!-- Fancybox -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Main stylesheet -->
+		<link rel="stylesheet" href="css/style-responsive.css"> <!-- Main stylesheet responsive -->
+		
+		<!-- CSS for the gallery -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/gallery_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+
+		<!-- ==============================================
+		JS
+		=============================================== -->
+		<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery main file -->
+		<script type="text/javascript" src="js/jquery.flexslider.min.js"></script> <!-- Flexslider -->
+		<script type="text/javascript" src="js/jquery.easing.pack.js"></script> <!-- Easing for Fancybox -->
+		<script type="text/javascript" src="js/jquery.mousewheel.pack.js"></script> <!-- Mousewheel for Fancybox -->
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script> <!-- Form Validation -->
+		<script type="text/javascript" src="js/big-day.js"></script> <!-- Custom JS -->
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		
+		
+		
+		<!-- for the gallery -->
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+		
+	</head>
+	<body class="fixed-nav">
+
+		<!-- ==============================================
+		Header
+		=============================================== -->
+		<section class="header">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+
+						<!-- ==============================================
+						Navigation
+						=============================================== -->
+						<ul class="nav hidden-phone hidden-tablet">
+							<li><a href="#thanks">Thanks</a></li>
+							<li><a href="#photos">Photo Gallery</a></li>
+						</ul>
+						<!-- End Navigation 
+						=============================================== -->
+
+						<!-- ==============================================
+						Mobile Navigation
+						=============================================== -->
+						<form name="nav" class="mobile-nav">
+				         	<select class="hidden-desktop" data-autogenerate="true"></select>
+				        </form>
+				        <!-- End Mobile Navigation 
+						=============================================== -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Header 
+		=============================================== -->
+
+		<!-- ==============================================
+		Thanks
+		=============================================== -->
+		<section class="about thanks" id="thanks">
+			<div class="container">
+				<div class="row">
+					<div class="span4">
+						<div class="image-container">
+							<a href="images/large-placeholder.png" class="fancybox">
+								<img src="./images/happy_couple.jpg" alt="Us">
+							</a>
+						</div>
+					</div>
+					<div class="span8">
+						<h2 class="text-center-mobile">Thanks</h2>
+						<hr>
+						<p>
+						To our family and friends: we cannot truly express how thankful we are for you being a part of our lives and giving us your love and support throughout our lives.</br></br>
+Our wedding day was everything we wanted and more. Your presence (and your presents) are so appreciated.  We are excited for all the upcoming adventures we will have together. Join us whenever you can ☺</br></br>
+If you want copies of any photos – just let us know and we will send them!</br></br>
+All our love,</br>
+the St.Dycks
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Thanks 
+		=============================================== -->
+
+		<!-- A photo gallery section -->
+		<section class="photos" id="photos">
+			<div class="line"></div>
+			<div class="container">
+				<div class="row">
+					<div class="span12 text-center heart">
+						<img src="images/heart.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12 text-center-mobile">
+						<h2>Photo Gallery</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Start rg-gallery -->
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<!--<li><a href="#"><img src="images/gallery_images/thumbs/1.jpg" data-large="images/gallery_images/1.jpg" alt="image01" /></a></li>-->
+									<!--<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/jendy.JPG" data-large='http://andrewdyck.com/post_wedding_website/jendy.JPG' alt='image25' /></a></li>-->
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3409-2-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3409-2-2_web.JPG" alt="image1" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6017-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6017-2_web.JPG" alt="image2" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6147_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6147_web.JPG" alt="image3" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6347_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6347_web.JPG" alt="image4" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6373_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6373_web.JPG" alt="image5" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6385-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6385-2_web.JPG" alt="image6" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6435_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6435_web.JPG" alt="image7" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6466_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6466_web.JPG" alt="image8" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6487_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6487_web.JPG" alt="image9" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6489_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6489_web.JPG" alt="image10" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6792-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6792-2_web.JPG" alt="image11" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6802-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6802-2_web.JPG" alt="image12" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6831-2-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6831-2-2_web.JPG" alt="image13" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6845-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6845-2_web.JPG" alt="image14" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6853-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6853-2_web.JPG" alt="image15" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2253_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2253_web.JPG" alt="image16" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2272-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2272-2_web.JPG" alt="image17" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2313-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2313-2_web.JPG" alt="image18" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2319-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2319-2_web.JPG" alt="image19" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2328-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2328-2_web.JPG" alt="image20" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2380-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2380-2_web.JPG" alt="image21" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2396_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2396_web.JPG" alt="image22" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2397-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2397-2_web.JPG" alt="image23" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2406-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2406-2_web.JPG" alt="image24" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2418-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2418-2_web.JPG" alt="image25" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2448-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2448-2_web.JPG" alt="image26" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2465_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2465_web.JPG" alt="image27" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2481-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2481-2_web.JPG" alt="image28" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2485_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2485_web.JPG" alt="image29" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2486_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2486_web.JPG" alt="image30" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2490_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2490_web.JPG" alt="image31" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2492_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2492_web.JPG" alt="image32" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2572-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2572-2_web.JPG" alt="image33" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2630_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2630_web.JPG" alt="image34" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2678_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2678_web.JPG" alt="image35" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2709_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2709_web.JPG" alt="image36" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2815-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2815-2_web.JPG" alt="image37" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2876_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2876_web.JPG" alt="image38" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6691_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6691_web.JPG" alt="image39" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_6902_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_6902_web.JPG" alt="image40" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7059-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7059-2_web.JPG" alt="image41" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2941_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2941_web.JPG" alt="image42" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2943_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2943_web.JPG" alt="image43" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_2946-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_2946-2_web.JPG" alt="image44" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3111_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3111_web.JPG" alt="image45" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7083-2-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7083-2-2_web.JPG" alt="image46" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7135_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7135_web.JPG" alt="image47" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7149_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7149_web.JPG" alt="image48" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7161_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7161_web.JPG" alt="image49" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7186_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7186_web.JPG" alt="image50" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7206_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7206_web.JPG" alt="image51" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7227_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7227_web.JPG" alt="image52" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7336_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7336_web.JPG" alt="image53" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7359_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7359_web.JPG" alt="image54" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7399_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7399_web.JPG" alt="image55" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7412-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7412-2_web.JPG" alt="image56" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7429_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7429_web.JPG" alt="image57" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7431-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7431-2_web.JPG" alt="image58" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3167_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3167_web.JPG" alt="image59" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3169-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3169-2_web.JPG" alt="image60" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3190_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3190_web.JPG" alt="image61" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3210_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3210_web.JPG" alt="image62" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3215-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3215-2_web.JPG" alt="image63" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3229-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3229-2_web.JPG" alt="image64" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3230_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3230_web.JPG" alt="image65" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3235_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3235_web.JPG" alt="image66" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3239-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3239-2_web.JPG" alt="image67" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3244-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3244-2_web.JPG" alt="image68" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3265_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3265_web.JPG" alt="image69" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3275_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3275_web.JPG" alt="image70" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3278_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3278_web.JPG" alt="image71" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3336-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3336-2_web.JPG" alt="image72" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3340_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3340_web.JPG" alt="image73" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3388_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3388_web.JPG" alt="image74" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3424-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3424-2_web.JPG" alt="image75" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3439_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3439_web.JPG" alt="image76" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3447_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3447_web.JPG" alt="image77" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3462-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3462-2_web.JPG" alt="image78" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3559_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3559_web.JPG" alt="image79" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7602_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7602_web.JPG" alt="image80" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7605_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7605_web.JPG" alt="image81" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7629_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7629_web.JPG" alt="image82" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7635-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7635-2_web.JPG" alt="image83" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7642_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7642_web.JPG" alt="image84" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7649_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7649_web.JPG" alt="image85" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7658_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7658_web.JPG" alt="image86" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7663-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7663-2_web.JPG" alt="image87" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7670_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7670_web.JPG" alt="image88" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7677-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7677-2_web.JPG" alt="image89" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7683_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7683_web.JPG" alt="image90" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7693-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7693-2_web.JPG" alt="image91" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7716_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7716_web.JPG" alt="image92" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7745_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7745_web.JPG" alt="image93" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7774-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7774-2_web.JPG" alt="image94" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7787_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7787_web.JPG" alt="image95" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7797_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7797_web.JPG" alt="image96" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7822-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7822-2_web.JPG" alt="image97" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7836_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7836_web.JPG" alt="image98" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7846_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7846_web.JPG" alt="image99" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7864_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7864_web.JPG" alt="image100" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7884_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7884_web.JPG" alt="image101" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7901_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7901_web.JPG" alt="image102" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7928-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7928-2_web.JPG" alt="image103" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_7970-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_7970-2_web.JPG" alt="image104" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8022_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8022_web.JPG" alt="image105" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8051-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8051-2_web.JPG" alt="image106" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8475_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8475_web.JPG" alt="image107" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3491-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3491-2_web.JPG" alt="image108" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3494-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3494-2_web.JPG" alt="image109" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3496-2-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3496-2-2_web.JPG" alt="image110" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3497-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3497-2_web.JPG" alt="image111" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3499-2-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3499-2-2_web.JPG" alt="image112" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3523-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3523-2_web.JPG" alt="image113" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3583_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3583_web.JPG" alt="image114" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3586_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3586_web.JPG" alt="image115" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3605_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3605_web.JPG" alt="image116" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3616_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3616_web.JPG" alt="image117" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3619-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3619-2_web.JPG" alt="image118" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3628_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3628_web.JPG" alt="image119" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3635-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3635-2_web.JPG" alt="image120" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3658-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3658-2_web.JPG" alt="image121" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3705_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3705_web.JPG" alt="image122" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3707-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3707-2_web.JPG" alt="image123" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3731_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3731_web.JPG" alt="image124" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3733_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3733_web.JPG" alt="image125" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3740_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3740_web.JPG" alt="image126" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3743_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3743_web.JPG" alt="image127" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3745_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3745_web.JPG" alt="image128" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3746_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3746_web.JPG" alt="image129" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3747_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3747_web.JPG" alt="image130" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3763_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3763_web.JPG" alt="image131" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3767-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3767-2_web.JPG" alt="image132" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3774_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3774_web.JPG" alt="image133" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3789_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3789_web.JPG" alt="image134" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3796_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3796_web.JPG" alt="image135" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3803-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3803-2_web.JPG" alt="image136" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3814_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3814_web.JPG" alt="image137" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3822-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3822-2_web.JPG" alt="image138" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3828_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3828_web.JPG" alt="image139" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_3836_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_3836_web.JPG" alt="image140" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8508-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8508-2_web.JPG" alt="image141" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8527-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8527-2_web.JPG" alt="image142" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8596_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8596_web.JPG" alt="image143" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8597_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8597_web.JPG" alt="image144" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8622-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8622-2_web.JPG" alt="image145" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8626-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8626-2_web.JPG" alt="image146" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8704_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8704_web.JPG" alt="image147" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8738_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8738_web.JPG" alt="image148" /></a></li>
+									<li><a href="#"><img src="http://andrewdyck.com/post_wedding_website/thumbs/IMG_8769-2_thumb.jpg" data-large="http://andrewdyck.com/post_wedding_website/IMG_8769-2_web.JPG" alt="image149" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- end rg-gallery -->
+				</div> <!-- row -->
+			</div> <!-- Container -->
+		</section>
+			
+
+		<!-- ==============================================
+		Photos
+		=============================================== -->
+		
+		<!-- End Photos 
+		=============================================== -->
+
+		
+
+		<!-- ==============================================
+		Footer
+		=============================================== -->
+		<section class="footer">
+			<div class="line"></div>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<p class="text-left">Copyright © 2013 - <a href="#">Big Day</a>. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Footer 
+		=============================================== -->
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+
+	</body>
+</html>
